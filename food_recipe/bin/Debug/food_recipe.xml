@@ -1,0 +1,448 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+food_recipe
+</name>
+</assembly>
+<members>
+<member name="P:food_recipe.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:food_recipe.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="P:food_recipe.My.Resources.Resources._error">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:food_recipe.My.Resources.Resources.cake">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:food_recipe.My.Resources.Resources.cake2">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:food_recipe.My.Resources.Resources.edit">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:food_recipe.My.Resources.Resources.HD_Mouth_Watering_Food_Wallpapers_for_Desktop_20_acdb3e4bb37d0e3bcc26c97591d3dd6b">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:food_recipe.My.Resources.Resources.icon5">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:food_recipe.My.Resources.Resources.img1">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:food_recipe.My.Resources.Resources.img10">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:food_recipe.My.Resources.Resources.img11">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:food_recipe.My.Resources.Resources.img12">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:food_recipe.My.Resources.Resources.img121">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:food_recipe.My.Resources.Resources.img13">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:food_recipe.My.Resources.Resources.img131">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:food_recipe.My.Resources.Resources.img14">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:food_recipe.My.Resources.Resources.img141">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:food_recipe.My.Resources.Resources.img15">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:food_recipe.My.Resources.Resources.img16">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:food_recipe.My.Resources.Resources.img2">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:food_recipe.My.Resources.Resources.img3">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:food_recipe.My.Resources.Resources.img4">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:food_recipe.My.Resources.Resources.img5">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:food_recipe.My.Resources.Resources.img6">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:food_recipe.My.Resources.Resources.img7">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:food_recipe.My.Resources.Resources.img9">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:food_recipe.My.Resources.Resources.imp10">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:food_recipe.My.Resources.Resources.imp101">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:food_recipe.My.Resources.Resources.okro1">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:food_recipe.My.Resources.Resources.plus">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:food_recipe.My.Resources.Resources.rice1">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:food_recipe.My.Resources.Resources.rice2">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="T:food_recipe.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="T:food_recipe.foodrecipeDataSet.ingredientsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:food_recipe.foodrecipeDataSet.ingredientsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:food_recipe.foodrecipeDataSet.ingredientsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:food_recipe.foodrecipeDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:food_recipe.foodrecipeDataSetTableAdapters.ingredientsTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:food_recipe.foodrecipeDataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(food_recipe.foodrecipeDataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:food_recipe.foodrecipeDataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(food_recipe.foodrecipeDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:food_recipe.foodrecipeDataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(food_recipe.foodrecipeDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:food_recipe.foodrecipeDataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:food_recipe.foodrecipeDataSetTableAdapters.TableAdapterManager.UpdateAll(food_recipe.foodrecipeDataSet)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:food_recipe.foodrecipeDataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:food_recipe.foodrecipeDataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:food_recipe.foodrecipeDataSetTableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="T:food_recipe.food_recipeDbData.ingredientDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:food_recipe.food_recipeDbData.recipeDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:food_recipe.food_recipeDbData.recipe_ingredientDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:food_recipe.food_recipeDbData.ingredientRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:food_recipe.food_recipeDbData.recipeRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:food_recipe.food_recipeDbData.recipe_ingredientRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:food_recipe.food_recipeDbData.ingredientRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:food_recipe.food_recipeDbData.recipeRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:food_recipe.food_recipeDbData.recipe_ingredientRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:food_recipe.food_recipeDbData">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:food_recipe.food_recipeDbDataTableAdapters.ingredientTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:food_recipe.food_recipeDbDataTableAdapters.recipeTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:food_recipe.food_recipeDbDataTableAdapters.recipe_ingredientTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:food_recipe.food_recipeDbDataTableAdapters.TableAdapterManager.UpdateUpdatedRows(food_recipe.food_recipeDbData,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:food_recipe.food_recipeDbDataTableAdapters.TableAdapterManager.UpdateInsertedRows(food_recipe.food_recipeDbData,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:food_recipe.food_recipeDbDataTableAdapters.TableAdapterManager.UpdateDeletedRows(food_recipe.food_recipeDbData,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:food_recipe.food_recipeDbDataTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:food_recipe.food_recipeDbDataTableAdapters.TableAdapterManager.UpdateAll(food_recipe.food_recipeDbData)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:food_recipe.food_recipeDbDataTableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:food_recipe.food_recipeDbDataTableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:food_recipe.food_recipeDbDataTableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="T:food_recipe.food_recipeDbDataSet1.ingredientDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:food_recipe.food_recipeDbDataSet1.recipeDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:food_recipe.food_recipeDbDataSet1.recipe_ingredientDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:food_recipe.food_recipeDbDataSet1.ingredientRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:food_recipe.food_recipeDbDataSet1.recipeRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:food_recipe.food_recipeDbDataSet1.recipe_ingredientRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:food_recipe.food_recipeDbDataSet1.ingredientRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:food_recipe.food_recipeDbDataSet1.recipeRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:food_recipe.food_recipeDbDataSet1.recipe_ingredientRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:food_recipe.food_recipeDbDataSet1">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:food_recipe.food_recipeDbDataSet1TableAdapters.ingredientTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:food_recipe.food_recipeDbDataSet1TableAdapters.recipeTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:food_recipe.food_recipeDbDataSet1TableAdapters.recipe_ingredientTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:food_recipe.food_recipeDbDataSet1TableAdapters.TableAdapterManager.UpdateUpdatedRows(food_recipe.food_recipeDbDataSet1,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:food_recipe.food_recipeDbDataSet1TableAdapters.TableAdapterManager.UpdateInsertedRows(food_recipe.food_recipeDbDataSet1,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:food_recipe.food_recipeDbDataSet1TableAdapters.TableAdapterManager.UpdateDeletedRows(food_recipe.food_recipeDbDataSet1,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:food_recipe.food_recipeDbDataSet1TableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:food_recipe.food_recipeDbDataSet1TableAdapters.TableAdapterManager.UpdateAll(food_recipe.food_recipeDbDataSet1)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:food_recipe.food_recipeDbDataSet1TableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:food_recipe.food_recipeDbDataSet1TableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:food_recipe.food_recipeDbDataSet1TableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="T:food_recipe.food_recipeDbDataSet.ingredientDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:food_recipe.food_recipeDbDataSet.recipeDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:food_recipe.food_recipeDbDataSet.recipe_ingredientDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:food_recipe.food_recipeDbDataSet.ingredientRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:food_recipe.food_recipeDbDataSet.recipeRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:food_recipe.food_recipeDbDataSet.recipe_ingredientRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:food_recipe.food_recipeDbDataSet.ingredientRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:food_recipe.food_recipeDbDataSet.recipeRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:food_recipe.food_recipeDbDataSet.recipe_ingredientRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:food_recipe.food_recipeDbDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:food_recipe.food_recipeDbDataSetTableAdapters.ingredientTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:food_recipe.food_recipeDbDataSetTableAdapters.recipeTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:food_recipe.food_recipeDbDataSetTableAdapters.recipe_ingredientTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:food_recipe.food_recipeDbDataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(food_recipe.food_recipeDbDataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:food_recipe.food_recipeDbDataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(food_recipe.food_recipeDbDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:food_recipe.food_recipeDbDataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(food_recipe.food_recipeDbDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:food_recipe.food_recipeDbDataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:food_recipe.food_recipeDbDataSetTableAdapters.TableAdapterManager.UpdateAll(food_recipe.food_recipeDbDataSet)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:food_recipe.food_recipeDbDataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:food_recipe.food_recipeDbDataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:food_recipe.food_recipeDbDataSetTableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+</members>
+</doc>
