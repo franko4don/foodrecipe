@@ -29,9 +29,8 @@ Partial Class ingredient
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.ingredientPicture = New System.Windows.Forms.PictureBox()
         Me.Button1 = New System.Windows.Forms.Button()
-        CType(Me.ingredientPicture, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.ingredientImage = New System.Windows.Forms.TextBox()
         Me.SuspendLayout()
         '
         'ingredientName
@@ -56,6 +55,7 @@ Partial Class ingredient
         Me.createIngredient.FlatAppearance.BorderSize = 0
         Me.createIngredient.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.createIngredient.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.createIngredient.ForeColor = System.Drawing.Color.White
         Me.createIngredient.Location = New System.Drawing.Point(15, 303)
         Me.createIngredient.Name = "createIngredient"
         Me.createIngredient.Size = New System.Drawing.Size(155, 32)
@@ -93,21 +93,11 @@ Partial Class ingredient
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(12, 228)
+        Me.Label4.Location = New System.Drawing.Point(12, 189)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(124, 13)
         Me.Label4.TabIndex = 7
         Me.Label4.Text = "INGREDIENT PICTURE"
-        '
-        'ingredientPicture
-        '
-        Me.ingredientPicture.Image = Global.food_recipe.My.Resources.Resources.img15
-        Me.ingredientPicture.Location = New System.Drawing.Point(168, 195)
-        Me.ingredientPicture.Name = "ingredientPicture"
-        Me.ingredientPicture.Size = New System.Drawing.Size(95, 86)
-        Me.ingredientPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.ingredientPicture.TabIndex = 2
-        Me.ingredientPicture.TabStop = False
         '
         'Button1
         '
@@ -116,6 +106,7 @@ Partial Class ingredient
         Me.Button1.FlatAppearance.BorderSize = 0
         Me.Button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button1.ForeColor = System.Drawing.Color.White
         Me.Button1.Location = New System.Drawing.Point(192, 303)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(155, 32)
@@ -123,35 +114,41 @@ Partial Class ingredient
         Me.Button1.Text = "BACK"
         Me.Button1.UseVisualStyleBackColor = False
         '
+        'ingredientImage
+        '
+        Me.ingredientImage.Location = New System.Drawing.Point(168, 186)
+        Me.ingredientImage.Name = "ingredientImage"
+        Me.ingredientImage.Size = New System.Drawing.Size(208, 20)
+        Me.ingredientImage.TabIndex = 9
+        '
         'ingredient
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(397, 352)
+        Me.Controls.Add(Me.ingredientImage)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.createIngredient)
-        Me.Controls.Add(Me.ingredientPicture)
         Me.Controls.Add(Me.ingredientDescription)
         Me.Controls.Add(Me.ingredientName)
         Me.Name = "ingredient"
         Me.Text = "ingredient"
-        CType(Me.ingredientPicture, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
     Friend WithEvents ingredientName As System.Windows.Forms.TextBox
     Friend WithEvents ingredientDescription As System.Windows.Forms.RichTextBox
-    Friend WithEvents ingredientPicture As System.Windows.Forms.PictureBox
     Friend WithEvents createIngredient As System.Windows.Forms.Button
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents Label4 As System.Windows.Forms.Label
     Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents ingredientImage As System.Windows.Forms.TextBox
 End Class

@@ -3,27 +3,49 @@ Imports System.Net
 Imports System.IO
 
 Public Class Recipes
-    Private StrConn = "Provider = Microsoft.ACE.OLEDB.12.0; Data Source = food_recipeDb.accdb"
+    Private StrConn = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\Ugwu Favour\Documents\Visual Studio 2010\Projects\food_recipe\food_recipe\foodrecipe.accdb"
     Private rder As OleDbDataReader
     Private cmd As OleDbCommand
     Private myconn As OleDbConnection
     Private customGroup As CustomGroupBox
 
     Private Sub Label1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
+       
+    End Sub
 
+    Public Sub Initialize()
+        Refresh()
     End Sub
 
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles createIngredient.Click
         Console.WriteLine("hello")
+        Me.Hide()
+        ingredient.Show()
     End Sub
 
     Private Sub Recipes_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-        Dim description As String = "Dice onions and green bell pepper and set aside Blend the pepper, tomatoes and crayfish seperately and set aside steam meat with the poultry seasoning, onions, salt, thyme,............"
-        Dim link As String = "https://urban945.com/news/img/1560783761_super_eagles.jpg"
-        customGroup = New CustomGroupBox("name", description, link, 0, 1)
-        Dim another As New CustomGroupBox("Wonderful", description, link, 90, 2)
-        Me.Controls.Add(customGroup)
-        Me.Controls.Add(another)
+        'Dim description As String = "Dice onions and green bell pepper and set aside Blend the pepper, tomatoes and crayfish seperately and set aside steam meat with the poultry seasoning, onions, salt, thyme,............"
+        'Dim link As String = "https://urban945.com/news/img/1560783761_super_eagles.jpg"
+        myconn = New OleDbConnection(StrConn)
+        Dim query As String = "select * from recipes"
+        Console.WriteLine(query)
+        cmd = New OleDbCommand(query, myconn)
+        Try
+            myconn.Open()
+            rder = cmd.ExecuteReader()
+            Dim count As Integer = 0
+            While rder.Read()
+
+                Dim another As New CustomGroupBox(rder.GetString(1), rder.GetString(2), rder.GetString(3), count, rder.GetInt32(0))
+                Me.Controls.Add(another)
+                count += 90
+
+            End While
+            myconn.Close()
+        Catch ex As Exception
+            Console.WriteLine(ex.Message)
+        End Try
+        
     End Sub
 
     Private Sub GroupBox1_Click(ByVal sender As Object, ByVal e As System.EventArgs)
@@ -85,7 +107,11 @@ Public Class Recipes
 
     End Sub
 
-    Private Sub Label10_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label10.Click
+    Private Sub Label10_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
+
+    End Sub
+
+    Private Sub Button1_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs)
 
     End Sub
 End Class
