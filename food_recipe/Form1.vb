@@ -18,25 +18,23 @@ Public Class Recipes
     End Sub
 
     Private Sub Recipes_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-        customGroup = New CustomGroupBox("name", "hello well", "trying")
+        Dim description As String = "Dice onions and green bell pepper and set aside Blend the pepper, tomatoes and crayfish seperately and set aside steam meat with the poultry seasoning, onions, salt, thyme,............"
+        Dim link As String = "https://urban945.com/news/img/1560783761_super_eagles.jpg"
+        customGroup = New CustomGroupBox("name", description, link, 0, 1)
+        Dim another As New CustomGroupBox("Wonderful", description, link, 90, 2)
         Me.Controls.Add(customGroup)
-        Dim tClient As WebClient = New WebClient
+        Me.Controls.Add(another)
+    End Sub
 
-        Dim tImage As Bitmap = Bitmap.FromStream(New MemoryStream(tClient.DownloadData("https://urban945.com/news/img/1560783761_super_eagles.jpg")))
-
-        Me.PictureBox1.Image = tImage
+    Private Sub GroupBox1_Click(ByVal sender As Object, ByVal e As System.EventArgs)
 
     End Sub
 
-    Private Sub GroupBox1_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles FoodGroup.Click
+    Private Sub GroupBox1_Enter(ByVal sender As System.Object, ByVal e As System.EventArgs)
 
     End Sub
 
-    Private Sub GroupBox1_Enter(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles FoodGroup.Enter
-
-    End Sub
-
-    Private Sub Label1_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label1.Click
+    Private Sub Label1_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs)
 
     End Sub
 
@@ -64,31 +62,30 @@ Public Class Recipes
 
     End Sub
 
-    Private Sub Button1_MouseHover(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.MouseHover
-        Label7.Text = "Delete Recipe"
-    End Sub
-
-    Private Sub Button1_MouseLeave(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.MouseLeave
-        Label7.Text = " "
-    End Sub
-
-    Private Sub Button3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button3.Click
+   
+    Private Sub Button3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
 
     End Sub
 
-    Private Sub Button3_MouseHover(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button3.MouseHover
-        Label8.Text = "Edit recipe"
-    End Sub
 
-    Private Sub Button3_MouseLeave(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button3.MouseLeave
-        Label8.Text = " "
-    End Sub
 
-    Private Sub PictureBox2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PictureBox2.Click
+    Private Sub PictureBox2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
 
     End Sub
 
-    Private Sub GroupBox3_Enter_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles GroupBox3.Enter
+    Private Sub GroupBox3_Enter_1(ByVal sender As System.Object, ByVal e As System.EventArgs)
+
+    End Sub
+
+    Private Sub Label2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
+
+    End Sub
+
+    Private Sub Label3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
+
+    End Sub
+
+    Private Sub Label10_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label10.Click
 
     End Sub
 End Class
