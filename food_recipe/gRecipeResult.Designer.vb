@@ -413,7 +413,7 @@ Partial Class gRecipeResult
         Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(34, Byte), Integer))
         Me.Label1.Location = New System.Drawing.Point(140, 49)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(235, 16)
+        Me.Label1.Size = New System.Drawing.Size(214, 16)
         Me.Label1.TabIndex = 29
         Me.Label1.Text = "GENERATE RECIPE RESULT"
         '

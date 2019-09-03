@@ -55,7 +55,7 @@ Partial Class create_recipe
         Me.createRecipe.BackColor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(34, Byte), Integer))
         Me.createRecipe.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.createRecipe.ForeColor = System.Drawing.Color.White
-        Me.createRecipe.Location = New System.Drawing.Point(12, 483)
+        Me.createRecipe.Location = New System.Drawing.Point(15, 572)
         Me.createRecipe.Name = "createRecipe"
         Me.createRecipe.Size = New System.Drawing.Size(112, 31)
         Me.createRecipe.TabIndex = 10
@@ -118,7 +118,7 @@ Partial Class create_recipe
         Me.Button1.BackColor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(34, Byte), Integer))
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button1.ForeColor = System.Drawing.Color.White
-        Me.Button1.Location = New System.Drawing.Point(171, 483)
+        Me.Button1.Location = New System.Drawing.Point(139, 572)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(112, 31)
         Me.Button1.TabIndex = 17
@@ -146,7 +146,7 @@ Partial Class create_recipe
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
-        Me.ClientSize = New System.Drawing.Size(566, 571)
+        Me.ClientSize = New System.Drawing.Size(566, 615)
         Me.Controls.Add(Me.recipeImage)
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.Button1)

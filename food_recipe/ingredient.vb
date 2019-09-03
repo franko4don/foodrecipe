@@ -1,9 +1,9 @@
 ﻿Imports System.Data.OleDb
 
 Public Class ingredient
-    Private ingredientNameValue As String
-    Private ingredientDescriptionValue As String
-    Private ingredientImageValue As String
+    Private ingredientNameValue As String = ""
+    Private ingredientDescriptionValue As String = ""
+    Private ingredientImageValue As String = ""
     Private image As String
     Private StrConn = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\Ugwu Favour\Documents\Visual Studio 2010\Projects\food_recipe\food_recipe\foodrecipe.accdb"
     Private rder As OleDbDataReader
@@ -20,6 +20,13 @@ Public Class ingredient
     End Sub
 
     Private Sub createIngredient_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles createIngredient.Click
+
+        If (ingredientDescriptionValue.Length = 0 Or ingredientNameValue.Length = 0 Or ingredientImageValue.Length = 0) Then
+            MessageBox.Show("Values cannot be empty", _
+                "Error Occured")
+            Return
+        End If
+
         myconn = New OleDbConnection(StrConn)
         Dim query As String = "insert into ingredients (ingredient_name, ingredient_description, ingredient_image) values('" & ingredientNameValue & "', '" & ingredientDescriptionValue & "', '" & ingredientImageValue & "')"
         Console.WriteLine(query)
@@ -29,7 +36,9 @@ Public Class ingredient
             rder = cmd.ExecuteReader()
             MessageBox.Show("Ingredient saved", _
                 "Operation Successful")
-
+            ingredientDescriptionValue = ""
+            ingredientImageValue = ""
+            ingredientNameValue = ""
             myconn.Close()
         Catch ex As Exception
             Console.WriteLine(ex.Message)

@@ -3,21 +3,39 @@ Imports System.Net
 
 Public Class SelectIngredient
     Inherits GroupBox
-    Public Sub New(ByVal offsetHeight As Integer)
+    Dim IngredientDropDown As ComboBox = New ComboBox
+    Dim QuantityTextBox As TextBox = New TextBox
+    Dim UnitDropDown As ComboBox = New ComboBox
+
+    Public Sub New(ByVal offsetHeight As Integer, ByVal ingredients As List(Of String))
 
         Dim height As Integer = 99
 
         Me.SetBounds(12, 344 + offsetHeight, 492, height)
         Me.BackColor = Color.White
+
         Dim ingredientName As Label = New Label
         Dim ingredientQuantity As Label = New Label
         Dim ingredientUnit As Label = New Label
 
         Dim recipeImage As PictureBox = New PictureBox
         Dim recipeDeleteButton As Button = New Button
-        Dim IngredientDropDown As ComboBox = New ComboBox
-        Dim QuantityTextBox As TextBox = New TextBox
-        Dim UnitDropDown As ComboBox = New ComboBox
+        
+
+        Dim ingredient As String
+        For Each ingredient In ingredients
+            IngredientDropDown.Items.Add(ingredient)
+
+        Next
+
+        UnitDropDown.Items.Add("Kg")
+        UnitDropDown.Items.Add("Litres")
+        UnitDropDown.Items.Add("Cups")
+        UnitDropDown.Items.Add("Sachets")
+        UnitDropDown.Items.Add("Tins")
+        UnitDropDown.Items.Add("Teaspoon")
+        UnitDropDown.Items.Add("Grams")
+
 
         IngredientDropDown.SetBounds(6, 49, 178, 21)
         QuantityTextBox.SetBounds(212, 49, 73, 20)
@@ -58,4 +76,12 @@ Public Class SelectIngredient
 
         MessageBox.Show(button.Name)
     End Sub
+
+    Public Function getValues() As List(Of String)
+        Dim result As New List(Of String)
+        result.Add(IngredientDropDown.SelectedText)
+        result.Add(QuantityTextBox.Text)
+        result.Add(UnitDropDown.SelectedText)
+        Return result
+    End Function
 End Class
