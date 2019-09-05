@@ -62,7 +62,7 @@ Public Class ingredient
 
         fd.Title = "Open File Dialog"
         fd.InitialDirectory = "C:\"
-        fd.Filter = "All files (*.*)|*.*|All files (*.*)|*.*"
+        fd.Filter = "JPEGs|*.jpg|PNGs|*.png"
         fd.FilterIndex = 2
         fd.RestoreDirectory = True
 

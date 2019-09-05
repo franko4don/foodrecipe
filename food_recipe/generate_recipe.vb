@@ -79,7 +79,8 @@ Public Class generate_recipe
     End Sub
 
     Private Sub createIngredient_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles createIngredient.Click
-
+        Me.Hide()
+        Recipes.Show()
     End Sub
 
     Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click

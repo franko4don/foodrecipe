@@ -30,6 +30,8 @@ Partial Class gRecipeResult
         'Button1
         '
         Me.Button1.BackColor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(34, Byte), Integer))
+        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button1.ForeColor = System.Drawing.Color.White
         Me.Button1.Location = New System.Drawing.Point(35, 319)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(135, 26)
