@@ -42,8 +42,8 @@ Public Class create_recipe
         recipeDescriptionValue = recipeDescription.Text
     End Sub
 
-    Private Sub TextBox1_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles recipeImage.TextChanged
-        recipeImageValue = recipeImage.Text
+    Private Sub TextBox1_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs)
+
     End Sub
 
     Private Sub create_recipe_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
@@ -57,7 +57,7 @@ Public Class create_recipe
             rder = cmd.ExecuteReader()
 
             While rder.Read()
-                ingredients.Add(rder.GetString(2))
+                ingredients.Add(rder.GetString(1))
                 
             End While
             myconn.Close()
@@ -193,5 +193,23 @@ Public Class create_recipe
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
         Me.Close()
         Recipes.Show()
+    End Sub
+
+    Private Sub PictureBox1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PictureBox1.Click
+        Dim fd As OpenFileDialog = New OpenFileDialog()
+        Dim strFileName As String
+
+        fd.Title = "Open File Dialog"
+        fd.InitialDirectory = "C:\"
+        fd.Filter = "All files (*.*)|*.*|All files (*.*)|*.*"
+        fd.FilterIndex = 2
+        fd.RestoreDirectory = True
+
+        If fd.ShowDialog() = DialogResult.OK Then
+            strFileName = fd.FileName
+            PictureBox1.Image = Image.FromFile(strFileName)
+            recipeImageValue = strFileName
+            Console.WriteLine(strFileName)
+        End If
     End Sub
 End Class

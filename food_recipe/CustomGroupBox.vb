@@ -11,7 +11,7 @@ Public Class CustomGroupBox
     Private rder As OleDbDataReader
     Private cmd As OleDbCommand
     Private myconn As OleDbConnection
-    Public Sub New(ByVal name As String, ByVal description As String, ByVal image As String, ByVal offsetHeight As Integer, ByVal id As Integer)
+    Public Sub New(ByVal name As String, ByVal description As String, ByVal img As String, ByVal offsetHeight As Integer, ByVal id As Integer)
 
         Dim height As Integer = 153
 
@@ -56,11 +56,11 @@ Public Class CustomGroupBox
         labelName.Text = name
         labelDescription.Text = description
 
-        Dim tClient As WebClient = New WebClient
+        'Dim tClient As WebClient = New WebClient
 
-        Dim tImage As Bitmap = Bitmap.FromStream(New MemoryStream(tClient.DownloadData(image)))
+        ' Dim tImage As Bitmap = Bitmap.FromStream(New MemoryStream(tClient.DownloadData(image)))
 
-        recipeImage.Image = tImage
+        recipeImage.Image = Image.FromFile(img)
 
         Me.Controls.Add(labelName)
         Me.Controls.Add(labelDescription)
@@ -98,7 +98,7 @@ Public Class CustomGroupBox
 
         button = CType(sendr, Button)
         generate_recipe.id = button.Name
-        MessageBox.Show(generate_recipe.id)
+        ' MessageBox.Show(generate_recipe.id)
         Recipes.Hide()
         generate_recipe.Show()
     End Sub

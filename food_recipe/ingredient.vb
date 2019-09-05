@@ -52,4 +52,9 @@ Public Class ingredient
     Private Sub ingredientImage_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ingredientImage.TextChanged
         ingredientImageValue = ingredientImage.Text
     End Sub
+
+    Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
+        Me.Hide()
+        Recipes.Show()
+    End Sub
 End Class

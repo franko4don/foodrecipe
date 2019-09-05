@@ -121,4 +121,21 @@ Public Class Recipes
         Me.Hide()
         create_recipe.Show()
     End Sub
+
+    Private Sub searchBtn_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles searchBtn.Click
+        Dim fd As OpenFileDialog = New OpenFileDialog()
+        Dim strFileName As String
+
+        fd.Title = "Open File Dialog"
+        fd.InitialDirectory = "C:\"
+        fd.Filter = "All files (*.*)|*.*|All files (*.*)|*.*"
+        fd.FilterIndex = 2
+        fd.RestoreDirectory = True
+
+        If fd.ShowDialog() = DialogResult.OK Then
+            strFileName = fd.FileName
+            PictureBox1.Image = Image.FromFile(strFileName)
+            Console.WriteLine(strFileName)
+        End If
+    End Sub
 End Class
