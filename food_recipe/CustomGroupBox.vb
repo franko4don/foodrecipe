@@ -88,7 +88,7 @@ Public Class CustomGroupBox
         Catch ex As Exception
             Console.WriteLine(ex.Message)
         End Try
-        MessageBox.Show(button.Name)
+        'MessageBox.Show(button.Name)
         food_recipe.Recipes.Controls.Remove(Me)
     End Sub
 

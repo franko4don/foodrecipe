@@ -75,7 +75,7 @@ Public Class SelectIngredient
         food_recipe.create_recipe.Controls.Remove(Me)
         button = CType(sendr, Button)
 
-        MessageBox.Show(button.Name)
+        'MessageBox.Show(button.Name)
     End Sub
 
     Public Function getValues() As List(Of String)

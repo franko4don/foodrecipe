@@ -33,7 +33,9 @@ Partial Class create_recipe
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
         'recipeName
@@ -47,7 +49,7 @@ Partial Class create_recipe
         '
         Me.recipeDescription.Location = New System.Drawing.Point(139, 63)
         Me.recipeDescription.Name = "recipeDescription"
-        Me.recipeDescription.Size = New System.Drawing.Size(310, 183)
+        Me.recipeDescription.Size = New System.Drawing.Size(310, 153)
         Me.recipeDescription.TabIndex = 2
         Me.recipeDescription.Text = ""
         '
@@ -56,7 +58,7 @@ Partial Class create_recipe
         Me.createRecipe.BackColor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(34, Byte), Integer))
         Me.createRecipe.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.createRecipe.ForeColor = System.Drawing.Color.White
-        Me.createRecipe.Location = New System.Drawing.Point(15, 572)
+        Me.createRecipe.Location = New System.Drawing.Point(6, 12)
         Me.createRecipe.Name = "createRecipe"
         Me.createRecipe.Size = New System.Drawing.Size(112, 31)
         Me.createRecipe.TabIndex = 10
@@ -119,7 +121,7 @@ Partial Class create_recipe
         Me.Button1.BackColor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(34, Byte), Integer))
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button1.ForeColor = System.Drawing.Color.White
-        Me.Button1.Location = New System.Drawing.Point(139, 572)
+        Me.Button1.Location = New System.Drawing.Point(124, 12)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(112, 31)
         Me.Button1.TabIndex = 17
@@ -137,31 +139,44 @@ Partial Class create_recipe
         '
         'PictureBox1
         '
-        Me.PictureBox1.Location = New System.Drawing.Point(139, 272)
+        Me.PictureBox1.Image = Global.food_recipe.My.Resources.Resources.image
+        Me.PictureBox1.Location = New System.Drawing.Point(133, 225)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(172, 93)
+        Me.PictureBox1.Size = New System.Drawing.Size(133, 113)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox1.TabIndex = 19
         Me.PictureBox1.TabStop = False
+        '
+        'GroupBox1
+        '
+        Me.GroupBox1.Controls.Add(Me.createRecipe)
+        Me.GroupBox1.Controls.Add(Me.Button1)
+        Me.GroupBox1.Location = New System.Drawing.Point(12, 453)
+        Me.GroupBox1.Name = "GroupBox1"
+        Me.GroupBox1.Size = New System.Drawing.Size(254, 49)
+        Me.GroupBox1.TabIndex = 20
+        Me.GroupBox1.TabStop = False
         '
         'create_recipe
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.AutoScroll = True
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(566, 615)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Label7)
-        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Label8)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.addRow)
-        Me.Controls.Add(Me.createRecipe)
         Me.Controls.Add(Me.recipeDescription)
         Me.Controls.Add(Me.recipeName)
+        Me.Controls.Add(Me.GroupBox1)
         Me.Name = "create_recipe"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.GroupBox1.ResumeLayout(False)
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -177,4 +192,5 @@ Partial Class create_recipe
     Friend WithEvents Button1 As System.Windows.Forms.Button
     Friend WithEvents Label7 As System.Windows.Forms.Label
     Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
+    Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
 End Class

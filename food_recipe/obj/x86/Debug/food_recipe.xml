@@ -39,6 +39,10 @@ food_recipe
 	<summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
+</member><member name="P:food_recipe.My.Resources.Resources.image">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
 </member><member name="P:food_recipe.My.Resources.Resources.img1">
 	<summary>
   Looks up a localized resource of type System.Drawing.Bitmap.

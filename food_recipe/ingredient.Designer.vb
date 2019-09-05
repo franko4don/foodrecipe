@@ -30,7 +30,8 @@ Partial Class ingredient
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
-        Me.ingredientImage = New System.Windows.Forms.TextBox()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'ingredientName
@@ -56,7 +57,7 @@ Partial Class ingredient
         Me.createIngredient.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.createIngredient.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.createIngredient.ForeColor = System.Drawing.Color.White
-        Me.createIngredient.Location = New System.Drawing.Point(15, 303)
+        Me.createIngredient.Location = New System.Drawing.Point(15, 328)
         Me.createIngredient.Name = "createIngredient"
         Me.createIngredient.Size = New System.Drawing.Size(155, 32)
         Me.createIngredient.TabIndex = 3
@@ -107,27 +108,30 @@ Partial Class ingredient
         Me.Button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button1.ForeColor = System.Drawing.Color.White
-        Me.Button1.Location = New System.Drawing.Point(192, 303)
+        Me.Button1.Location = New System.Drawing.Point(192, 328)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(155, 32)
         Me.Button1.TabIndex = 8
         Me.Button1.Text = "BACK"
         Me.Button1.UseVisualStyleBackColor = False
         '
-        'ingredientImage
+        'PictureBox1
         '
-        Me.ingredientImage.Location = New System.Drawing.Point(168, 186)
-        Me.ingredientImage.Name = "ingredientImage"
-        Me.ingredientImage.Size = New System.Drawing.Size(208, 20)
-        Me.ingredientImage.TabIndex = 9
+        Me.PictureBox1.Image = Global.food_recipe.My.Resources.Resources.image
+        Me.PictureBox1.Location = New System.Drawing.Point(177, 174)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(170, 133)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.TabIndex = 9
+        Me.PictureBox1.TabStop = False
         '
         'ingredient
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
-        Me.ClientSize = New System.Drawing.Size(397, 352)
-        Me.Controls.Add(Me.ingredientImage)
+        Me.ClientSize = New System.Drawing.Size(397, 372)
+        Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label3)
@@ -138,6 +142,7 @@ Partial Class ingredient
         Me.Controls.Add(Me.ingredientName)
         Me.Name = "ingredient"
         Me.Text = "ingredient"
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -150,5 +155,5 @@ Partial Class ingredient
     Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents Label4 As System.Windows.Forms.Label
     Friend WithEvents Button1 As System.Windows.Forms.Button
-    Friend WithEvents ingredientImage As System.Windows.Forms.TextBox
+    Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
 End Class

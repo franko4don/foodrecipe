@@ -111,14 +111,16 @@ Public Class generate_recipe
             myconn.Open()
             rder = cmd.ExecuteReader()
             ListBox1.Items.Clear()
+            gRecipeResult.ListBox1.Items.Clear()
             While rder.Read()
                 Dim nquantity As Integer = CInt(quantity)
                 Dim result As Double = (nquantity * rder.GetInt32(2)) / mainQuantity
                 If (rder.GetString(1) = keyIngredient) Then
+                    gRecipeResult.ListBox1.Items.Add(rder.GetString(1) & " " & nquantity & " " & rder.GetString(3))
                     ListBox1.Items.Add(rder.GetString(1) & " " & nquantity & " " & rder.GetString(3))
                 Else
 
-
+                    gRecipeResult.ListBox1.Items.Add(rder.GetString(1) & " " & result & " " & rder.GetString(3))
                     ListBox1.Items.Add(rder.GetString(1) & " " & result & " " & rder.GetString(3))
                 End If
                 Console.WriteLine(rder.GetString(1) & result)
@@ -128,7 +130,8 @@ Public Class generate_recipe
             Console.WriteLine(ex.Message)
         End Try
 
-        
+        Me.Hide()
+        gRecipeResult.Show()
     End Sub
 
     Private Sub ComboBox1_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ComboBox1.SelectedIndexChanged
@@ -136,6 +139,10 @@ Public Class generate_recipe
     End Sub
 
     Private Sub TextBox2_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextBox2.TextChanged
+
+    End Sub
+
+    Private Sub SplitContainer1_Panel1_Paint(ByVal sender As System.Object, ByVal e As System.Windows.Forms.PaintEventArgs) Handles SplitContainer1.Panel1.Paint
 
     End Sub
 End Class

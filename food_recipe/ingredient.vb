@@ -4,7 +4,7 @@ Public Class ingredient
     Private ingredientNameValue As String = ""
     Private ingredientDescriptionValue As String = ""
     Private ingredientImageValue As String = ""
-    Private image As String
+
     Private StrConn = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\Ugwu Favour\Documents\Visual Studio 2010\Projects\food_recipe\food_recipe\foodrecipe.accdb"
     Private rder As OleDbDataReader
     Private cmd As OleDbCommand
@@ -49,12 +49,28 @@ Public Class ingredient
 
     End Sub
 
-    Private Sub ingredientImage_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ingredientImage.TextChanged
-        ingredientImageValue = ingredientImage.Text
-    End Sub
+
 
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
         Me.Hide()
         Recipes.Show()
+    End Sub
+
+    Private Sub PictureBox1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PictureBox1.Click
+        Dim fd As OpenFileDialog = New OpenFileDialog()
+        Dim strFileName As String
+
+        fd.Title = "Open File Dialog"
+        fd.InitialDirectory = "C:\"
+        fd.Filter = "All files (*.*)|*.*|All files (*.*)|*.*"
+        fd.FilterIndex = 2
+        fd.RestoreDirectory = True
+
+        If fd.ShowDialog() = DialogResult.OK Then
+            strFileName = fd.FileName
+            PictureBox1.Image = Image.FromFile(strFileName)
+            ingredientImageValue = strFileName
+            Console.WriteLine(strFileName)
+        End If
     End Sub
 End Class

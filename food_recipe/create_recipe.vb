@@ -182,7 +182,7 @@ Public Class create_recipe
     Private Sub addRow_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles addRow.Click
         count += 109
         Me.Controls.Add(New SelectIngredient(count, ingredients))
-
+        GroupBox1.Location = New Point(12, count + 10 + 442)
 
     End Sub
 
@@ -211,5 +211,9 @@ Public Class create_recipe
             recipeImageValue = strFileName
             Console.WriteLine(strFileName)
         End If
+    End Sub
+
+    Private Sub GroupBox1_Enter(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles GroupBox1.Enter
+
     End Sub
 End Class
