@@ -163,8 +163,10 @@ Public Class create_recipe
                 Try
                     myconn.Open()
                     rder = cmd.ExecuteReader()
-                    
+                    MessageBox.Show("Recipe ingredient saved", _
+                "Operation Successful")
                     myconn.Close()
+
                 Catch ex As Exception
                     Console.WriteLine(ex.Message)
                 End Try
@@ -172,7 +174,7 @@ Public Class create_recipe
                 Console.WriteLine(c)
             End If
         Next
-
+        myconn.Close()
         
 
     End Sub
@@ -186,5 +188,10 @@ Public Class create_recipe
 
     Private Sub FlowLayoutPanel2_Paint(ByVal sender As System.Object, ByVal e As System.Windows.Forms.PaintEventArgs)
 
+    End Sub
+
+    Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
+        Me.Close()
+        Recipes.Show()
     End Sub
 End Class

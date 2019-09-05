@@ -95,8 +95,11 @@ Public Class CustomGroupBox
     Private Sub editMe(ByVal sendr As Object, ByVal e As System.EventArgs)
         Dim button As Button
 
-        button = CType(sendr, Button)
 
-        MessageBox.Show(button.Name)
+        button = CType(sendr, Button)
+        generate_recipe.id = button.Name
+        MessageBox.Show(generate_recipe.id)
+        Recipes.Hide()
+        generate_recipe.Show()
     End Sub
 End Class

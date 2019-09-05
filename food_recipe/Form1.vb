@@ -13,6 +13,8 @@ Public Class Recipes
        
     End Sub
 
+
+
     Public Sub Initialize()
         Refresh()
     End Sub
@@ -113,5 +115,10 @@ Public Class Recipes
 
     Private Sub Button1_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs)
 
+    End Sub
+
+    Private Sub createRecipe_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles createRecipe.Click
+        Me.Hide()
+        create_recipe.Show()
     End Sub
 End Class
